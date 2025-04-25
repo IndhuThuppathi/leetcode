@@ -1,6 +1,20 @@
+
+
 class MyLinkedList {
+private:
+    
+    struct Node {
+        int val;
+        Node* next;
+        Node(int x) : val(x), next(nullptr) {}
+    };
+
+    Node* head; 
+    int size;  
+
 public:
-     MyLinkedList() {
+   
+    MyLinkedList() {
         head = nullptr;
         size = 0;
     }
@@ -76,6 +90,9 @@ public:
         size--;
     }
 };
+
+
+ 
 
 
 /**
